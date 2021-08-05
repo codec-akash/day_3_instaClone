@@ -26,14 +26,14 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            Expanded(
-              child: Container(
-                child: ListView.builder(
-                  itemCount: 5,
-                  itemBuilder: (context, index) => Post(),
-                ),
-              ),
-            ),
+            // Expanded(
+            //   child: Container(
+            //     child: ListView.builder(
+            //       itemCount: 5,
+            //       itemBuilder: (context, index) => Post(),
+            //     ),
+            //   ),
+            // ),
             Container(
               decoration: BoxDecoration(
                   border: Border.all(
