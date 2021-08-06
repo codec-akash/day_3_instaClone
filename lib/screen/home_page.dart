@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widget/post.dart';
+import '../widget/story.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -27,11 +28,11 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Expanded(
-              child: Container(
-                child: ListView.builder(
-                  itemCount: 5,
-                  itemBuilder: (context, index) => Post(),
-                ),
+              child: Column(
+                children: [
+                  Story(),
+                  Post(),
+                ],
               ),
             ),
             Container(
